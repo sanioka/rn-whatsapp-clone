@@ -5,7 +5,7 @@ import { ColorSchemeName, View } from 'react-native';
 
 import NotFoundScreen from '../screens/NotFoundScreen';
 import { RootStackParamList } from '../types';
-import BottomTabNavigator from './BottomTabNavigator';
+import MainTabNavigator from './MainTabNavigator';
 import LinkingConfiguration from './LinkingConfiguration';
 import Colors from "../constants/Colors";
 import { Octicons, MaterialCommunityIcons } from '@expo/vector-icons';
@@ -30,7 +30,9 @@ function RootNavigator() {
   return (
     <Stack.Navigator screenOptions={{
       headerStyle: {
-        backgroundColor: Colors.light.tint
+        backgroundColor: Colors.light.tint,
+        shadowOpacity: 0, // iOS fix
+        elevation: 0, // Android fix
       },
       headerTintColor: Colors.light.background,
       headerTitleAlign: 'left',
@@ -54,7 +56,7 @@ function RootNavigator() {
             </View>
           )
         }}
-        component={BottomTabNavigator}
+        component={MainTabNavigator}
       />
       <Stack.Screen name="NotFound" component={NotFoundScreen} options={{title: 'Oops!'}}/>
     </Stack.Navigator>
