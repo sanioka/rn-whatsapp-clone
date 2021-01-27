@@ -33,7 +33,7 @@ export default function MainTabNavigator() {
           fontWeight: 'bold',
         },
         showIcon: true,
-        // tabStyle: { width: 100 },
+        tabStyle: { width: 'auto' }, // cheap way to minimize camera icon tab width
       }}>
       <MainTab.Screen
         name="Camera"
