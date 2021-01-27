@@ -59,7 +59,7 @@ export default [{
   }],
   lastMessage: {
     id: 'm4',
-    content: 'Can you review my last merge',
+    content: 'Can you review my last merge. Lorem ipsum dolor it samet belmin',
     createdAt: '2020-09-29T14:48:00.000Z',
   }
 }, {

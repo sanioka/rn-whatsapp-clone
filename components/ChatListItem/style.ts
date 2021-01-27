@@ -28,7 +28,7 @@ const style = StyleSheet.create({
     color: 'gray',
   },
   time: {
-    fontSize: 16,
+    fontSize: 14,
     color: 'gray',
   }
 })
