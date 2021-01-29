@@ -14,7 +14,7 @@ const ChatListItem = (props: ChatListItemProps) => {
 
   const user = chatRoom.users[1];
 
-  console.log(chatRoom);
+  // console.log(chatRoom);
 
   return (
     <View style={styles.container}>
