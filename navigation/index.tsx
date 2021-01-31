@@ -10,7 +10,7 @@ import LinkingConfiguration from './LinkingConfiguration';
 import Colors from "../constants/Colors";
 import { Octicons, MaterialCommunityIcons, MaterialIcons, FontAwesome5 } from '@expo/vector-icons';
 
-import ChatRoomScreen from '../screens/ChatRoom';
+import ChatRoomScreen from '../screens/ChatRoomScreen';
 
 // If you are not familiar with React Navigation, we recommend going through the
 // "Fundamentals" guide: https://reactnavigation.org/docs/getting-started
