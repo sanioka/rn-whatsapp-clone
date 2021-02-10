@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { FlatList, Text, ImageBackground, View } from 'react-native';
 
 import { useRoute } from '@react-navigation/native';
@@ -23,7 +23,7 @@ const ChatRoomScreen = () => {
         renderItem={({item}) => <ChatMessage message={item} /> }
         inverted={true}
       />
-      <InputBox />
+      <InputBox chatRoomID={route.params.id}/>
     </ImageBackground>
 
 
