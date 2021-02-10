@@ -37,7 +37,7 @@ function App() {
   useEffect(() => {
     const fetchUser = async () => {
       const userInfo = await Auth.currentAuthenticatedUser({ bypassCache: true });
-      console.log(userInfo);
+      // console.log(userInfo);
 
       if (userInfo) {
         const userData = await API.graphql(
