@@ -15,6 +15,7 @@ import {
   graphqlOperation
 } from "aws-amplify";
 import { messagesByChatRoom } from '../graphql/queries';
+import { onCreateMessage } from '../graphql/subscriptions';
 
 const ChatRoomScreen = () => {
 
@@ -24,22 +25,20 @@ const ChatRoomScreen = () => {
 
   // console.log(route.params);
 
-  useEffect(() => {
-    const fetchMessages = async () => {
-      const messagesData = await API.graphql(
-        graphqlOperation(
-          messagesByChatRoom, {
-            chatRoomID: route.params.id,
-            sortDirection: 'DESC',
-          }
-        )
+  const fetchMessages = async () => {
+    const messagesData = await API.graphql(
+      graphqlOperation(
+        messagesByChatRoom, {
+          chatRoomID: route.params.id,
+          sortDirection: 'DESC',
+        }
       )
+    )
 
-      // console.log('messagesData');
-      // console.log(messagesData);
+    setMessages(messagesData.data.messagesByChatRoom.items);
+  }
 
-      setMessages(messagesData.data.messagesByChatRoom.items);
-    }
+  useEffect(() => {
     fetchMessages();
   }, []);
 
@@ -50,6 +49,29 @@ const ChatRoomScreen = () => {
     }
     getMyUserId();
   }, []);
+
+  useEffect(() => {
+    const subscription = API.graphql(
+      graphqlOperation(onCreateMessage)
+    ).subscribe({
+      next: (data) => {
+        const newMessage = data.value.data.onCreateMessage;
+
+        // check subscription to receive only current chat room message
+        if (newMessage.chatRoomID !== route.params.id) {
+          return;
+        }
+
+        // Its workaround
+        fetchMessages();
+        // TODO: fix bug
+        // setMessages([newMessage, ...messages]);
+        // console.log('data', data.value.data);
+      }
+    })
+
+    return () => subscription.unsubscribe();
+  }, [])
 
   return (
     <ImageBackground source={BG} style={{width: '100%', height: '100%'}}>
