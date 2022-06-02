@@ -1,8 +1,6 @@
 # rn-whatsapp-clone
 
-<img src="./images/IMG_6397.PNG" alt="WhatsApp Clone App / Preview" width="20%"/>
-
-<img src="./images/IMG_6399.PNG" alt="WhatsApp Clone App / Preview" width="20%"/>
+| <img src="./images/IMG_6397.PNG" alt="WhatsApp Clone App / Preview" width="20%"/> | <img src="./images/IMG_6399.PNG" alt="WhatsApp Clone App / Preview" width="20%"/> |
 
 <br>
 
