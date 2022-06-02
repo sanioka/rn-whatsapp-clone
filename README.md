@@ -33,7 +33,21 @@ https://docs.expo.dev/workflow/upgrading-expo-sdk-walkthrough/
 
 ⚠️ Error: Unable to resolve module `./aws-exports` from `App.tsx`:
 
-[./amplify/README.md](./amplify/README.md)
+<br>
+
+#### Read config from AWS Amplify
+
+`npm install -g @aws-amplify/cli`
+
+[AWS Amplify](https://console.aws.amazon.com/) (eu-central-1) / WhatsappClone
+
+`amplify pull --appId d3udi498n7um79 --envName dev`
+
+⚽️ See Notion App — react-native-amplify-1 (universal user)
+
+<br>
+
+#### Create AWS Amplify from Zero
 
 https://docs.amplify.aws/start/getting-started/installation/q/integration/react-native/
 
