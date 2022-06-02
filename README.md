@@ -22,12 +22,15 @@
 Upgrading Expo SDK<br>
 https://docs.expo.dev/workflow/upgrading-expo-sdk-walkthrough/
 
-
+Deleted "dependencies": {<br>
+"@react-native-community/masked-view": "0.1.10",
 
 
 ### Сourse author
 
 @Vadim Savin / Build a Realtime Chat App in React Native (tutorial for beginners) 🔴<br>
-Source: https://www.youtube.com/watch?v=EvSUJ5lUcBw
+https://www.youtube.com/watch?v=EvSUJ5lUcBw (frontend)<br>
+https://www.youtube.com/watch?v=HdLbavvfflQ (backend)<br>
+https://www.youtube.com/watch?v=Uq_vkUFnrss&t=1s (backend 2)
 
 https://assets.notjust.dev/whatsapp
