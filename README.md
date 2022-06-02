@@ -3,6 +3,8 @@
 ![WhatsApp Clone App / Preview](./images/app-preview.gif)<br>
 🎥 https://***
 
+<br>
+
 ### How to build project
 
 ⚽️ Prepare expo environment by https://docs.expo.dev/get-started/installation/
@@ -15,16 +17,33 @@
 
 ⚽️ Scan the QR code above with Expo Go (Android) or the Camera app (iOS)
 
-### Issues
+<br>
+
+### Upgrading Expo SDK
+
+https://docs.expo.dev/workflow/upgrading-expo-sdk-walkthrough/
+
+`npm i -g expo-cli`
+
+`expo upgrade`
+
+<br>
+
+### AWS Amplify
 
 ⚠️ Error: Unable to resolve module `./aws-exports` from `App.tsx`:
 
-Upgrading Expo SDK<br>
-https://docs.expo.dev/workflow/upgrading-expo-sdk-walkthrough/
+[./amplify/README.md](./amplify/README.md)
 
-Deleted "dependencies": {<br>
-"@react-native-community/masked-view": "0.1.10",
+https://docs.amplify.aws/start/getting-started/installation/q/integration/react-native/
 
+https://www.youtube.com/watch?v=fWbM5DLh25U&t=34s
+
+`npm install -g @aws-amplify/cli`
+
+`amplify configure`
+
+<br>
 
 ### Сourse author
 
@@ -34,3 +53,5 @@ https://www.youtube.com/watch?v=HdLbavvfflQ (backend)<br>
 https://www.youtube.com/watch?v=Uq_vkUFnrss&t=1s (backend 2)
 
 https://assets.notjust.dev/whatsapp
+
+<br>
