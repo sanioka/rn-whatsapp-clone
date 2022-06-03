@@ -7,6 +7,7 @@ import * as React from 'react';
 import Colors from '../constants/Colors';
 import useColorScheme from '../hooks/useColorScheme';
 import ChatsScreen from '../screens/ChatsScreen';
+import StatusScreen from "../screens/StatusScreen";
 import TabTwoScreen from '../screens/TabTwoScreen';
 import { MainTabParamList, TabOneParamList, TabTwoParamList } from '../types';
 
@@ -49,7 +50,7 @@ export default function MainTabNavigator() {
       />
       <MainTab.Screen
         name="Status"
-        component={TabTwoNavigator}
+        component={StatusScreen}
       />
       <MainTab.Screen
         name="Calls"
