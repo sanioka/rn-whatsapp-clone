@@ -6,55 +6,9 @@
 
 ### How to build project
 
-⚽️ Prepare expo environment by https://docs.expo.dev/get-started/installation/
+https://github.com/sanioka/rn-common
 
-⚽️ `npm install`
-
-⚽️ `expo start` or `npm start`
-
-⚽️ Install Expo app to mobile phone.
-
-⚽️ Scan the QR code above with Expo Go (Android) or the Camera app (iOS)
-
-<br>
-
-### Upgrading Expo SDK
-
-https://docs.expo.dev/workflow/upgrading-expo-sdk-walkthrough/
-
-`npm i -g expo-cli`
-
-`expo upgrade`
-
-<br>
-
-### AWS Amplify
-
-⚠️ Error: Unable to resolve module `./aws-exports` from `App.tsx`:
-
-<br>
-
-#### Read config from AWS Amplify
-
-`npm install -g @aws-amplify/cli`
-
-[AWS Amplify](https://console.aws.amazon.com/) (eu-central-1) / WhatsappClone
-
-`amplify pull --appId d3udi498n7um79 --envName dev`
-
-⚽️ See Notion App — react-native-amplify-1 (universal user)
-
-<br>
-
-#### Create AWS Amplify from Zero
-
-https://docs.amplify.aws/start/getting-started/installation/q/integration/react-native/
-
-https://www.youtube.com/watch?v=fWbM5DLh25U&t=34s
-
-`npm install -g @aws-amplify/cli`
-
-`amplify configure`
+Plus custom settings: `amplify pull --appId d3udi498n7um79 --envName dev`
 
 <br>
 
